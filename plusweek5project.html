@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bb001f50c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <img
+          class="jpgclouds"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/870/original/clouds.jpg?1666529250"
+          alt="clouds"
+          width="200px"
+        />
+        <span class="title"> Today's weather </span>
+        <img
+          class="jpgclouds"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/870/original/clouds.jpg?1666529250"
+          alt="clouds"
+          width="200px"
+        />
+      </h1>
+      <form id="choose-city">
+        <input
+          id="city-input"
+          type="text"
+          placeholder="Choose your city"
+          class="choosecity"
+        />
+        <input type="submit" value="Let's go!" class="letsgobutton" />
+      </form>
+      <button class="current-city-button" id="current-city">
+        Current City
+      </button>
+      <section class="todaydetails">
+        <div class="row">
+          <div class="col actualcity" id="chosen-city">Copenhagen</div>
+          <div class="col actualweather">
+            🌤️
+            <span id="changing-degree"> 13 </span>
+            <span> <a href="#" id="celsius">C°</a></span>
+            <br />
+            <span id="condition">Cloudy</span>
+          </div>
+          <div class="col actualdate">
+            <span id="current-day"> Sunday </span>
+            <br />
+            <span id="current-hour">12</span>:<span id="current-minutes">
+              00
+            </span>
+            <br />
+            <span id="current-year">2022</span>.<span id="current-month">
+              10 </span
+            >.<span id="current-date">23</span>.
+          </div>
+        </div>
+      </section>
+      <section class="nextdays">
+        <div class="row">
+          <div class="col days day1">
+            <span class="dayname"> Sunday</span>
+            <br />
+            <span class="weatheremoji">🌤️</span>
+            <br />
+            14°/11°
+            <br />
+            cloudy
+          </div>
+          <div class="col days day2">
+            <span class="dayname"> Monday</span>
+            <br />
+            <span class="weatheremoji">🌧️</span>
+            <br />
+            16°/11°
+            <br />
+            rainy
+          </div>
+          <div class="col days day3">
+            <span class="dayname"> Tuesday</span>
+            <br />
+            <span class="weatheremoji">🌧️</span>
+            <br />
+            14°/10°
+            <br />
+            rainy
+          </div>
+          <div class="col days day4">
+            <span class="dayname"> Wednesday</span>
+            <br />
+            <span class="weatheremoji">☁️</span>
+            <br />
+            14°/11°
+            <br />
+            cloudy
+          </div>
+          <div class="col days day5">
+            <span class="dayname"> Thursday</span>
+            <br />
+            <span class="weatheremoji">☁️</span>
+            <br />
+            16°/12°
+            <br />
+            cloudy
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="card dailymessage">Don't forget to smile! 😋</div>
+      </footer>
+    </div>
+    <script src="javaVersion3.js"></script>
+  </body>
+</html>
