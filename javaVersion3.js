@@ -66,7 +66,7 @@ function getLocation() {
   navigator.geolocation.getCurrentPosition(showPosition);
   function showPosition(position) {
     let lat = position.coords.latitude;
-    let lon = position.coords.longitude; 
+    let lon = position.coords.longitude;
     let apiKey2 = "1fa04c70c5487af6b7c48dd7dfcb0b3f";
     let unit2 = "metric";
     let myTemp = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey2}&&units=${unit2}`;

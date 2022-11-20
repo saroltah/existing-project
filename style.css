@@ -42,7 +42,12 @@ h1 {
 }
 .current-city-button {
   border-radius: 10%;
-  border: 1px solid black;
+  border: 1px solid #bf746f;
+  background-color: #eae5e8;
+  font-weight: bold;
+  padding: 6px 6px;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px #bf746f;
 }
 .todaydetails {
   font-size: 30px;
